@@ -9,7 +9,7 @@ export default function Animal({ animal }) {
         left: animal.left
       }}
     >
-      <img alt={animal.name} src={`/animals/${animal.type}.svg`} />
+      <img alt={animal.name} src={`${process.env.PUBLIC_URL}/animals/${animal.type}.svg`} />
       <span className='name'>{animal.name}</span>
       <span>{animal.says}</span>
     </div>
