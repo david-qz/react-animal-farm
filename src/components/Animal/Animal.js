@@ -1,3 +1,3 @@
-export default function Animal() {
-  return <></>;
+export default function Animal({ animal }) {
+  return <p>{animal.name}</p>;
 }
