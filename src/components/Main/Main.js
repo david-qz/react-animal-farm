@@ -5,7 +5,9 @@ import Animal from '../Animal/Animal';
 import { animals } from '../../data';
 
 export default function Main() {
-  return <main style={{ backgroundImage: `url(${background})` }}>
-    {animals.map(animal => <Animal key={animal.name} animal={animal}/>)}
-  </main>;
+  return (
+    <main style={{ backgroundImage: `url(${background})` }}>
+      {animals.map(animal => <Animal key={animal.name} animal={animal}/>)}
+    </main>
+  );
 }
